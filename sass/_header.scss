@@ -1,0 +1,130 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    background-color: var(--secondary-text-color);
+    color: var(--accent-text-color);
+}
+
+.header-button{
+margin-left: auto;
+border:none;
+background-color: transparent;
+}
+
+/* MAIN DIV */
+
+.container--header {
+  @extend %algin-list;
+}
+
+
+/* Стилизация навигации */
+.current-nav {
+    list-style: none;
+    display: flex;
+    margin-left: 93px;
+    display: none;
+}
+
+
+.current-nav__top {
+    margin-right: 50px;
+}
+
+.current-nav__top:last-child {
+    margin-right: 0;
+}
+
+
+.current-nav__item {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.current-nav__item--changes {
+    position: relative;
+   &::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: var(--accent-text-color);
+        }
+}
+
+
+
+
+.contacts__item {
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-duration: 250ms;
+
+    color: rgba(117, 117, 117, 1);
+}
+
+.contacts {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    display: none;
+}
+
+
+
+.current-nav__item {
+    transition-property: color;
+    @include font(500, 14px, 1.14, 0.02em);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-duration: 250ms;
+    cursor: pointer;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    &:hover,
+       &:focus {
+            color: var(--accent-text-color);
+        }
+}
+
+.contacts .contacts__item+.contacts__item {
+    margin-left: 50px;
+}
+
+
+
+
+.contacts__link {
+    @extend %algin-list;
+    @include font(500, 14px, 1.14, 0.02em);
+    cursor: pointer;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-duration: 250ms;
+    text-decoration: none;
+    color: var(--secondary-accent-color);
+    &:hover,
+       &:focus {
+            color: var(--accent-text-color);
+        }
+}
+
+.current-nav-link {
+    color: var(--accent-text-color);
+}
+
+
+/* ______________________СВГ___________ */
+
+.contacts__icons {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor
+}
+
+.contacts__icons--size {
+    height: 16px;
+}
