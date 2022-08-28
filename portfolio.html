@@ -60,34 +60,109 @@
             >
           </li>
         </ul>
+        <button
+          class="header-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg width="40px" height="40px">
+            <use href="./img/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="header-menu js-menu-container" id="mobile-menu">
+        <div class="container-menu">
+          <button class="header-button__close js-close-menu" type="button">
+            <svg width="40px" height="40px">
+              <use href="./img/symbol-defs.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <nav class="menu__items">
+            <ul class="current-menu">
+              <li class="current-menu__list">
+                <a href="./index.html" class="current-menu__link">Студія</a>
+              </li>
+              <li class="current-menu__list">
+                <a
+                  href="./portfolio.html"
+                  class="current-menu__link current-menu__link--changes"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="current-menu__list">
+                <a href="" class="current-menu__link">Контакти</a>
+              </li>
+            </ul>
+            <ul class="contacts-menu">
+              <li class="list-menu">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="list-menu__link list-menu__link--changes"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="list-menu" aria-label="Позвонити">
+                <a href="tel:+380961111111" class="list-menu__link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="current-network">
+              <li class="current-network__item" aria-label="Instagram">
+                <a href="" class="current-network__link">Instagram</a>
+              </li>
+              <li class="current-network__item" aria-label="Twitter">
+                <a href="" class="current-network__link">Twitter</a>
+              </li>
+              <li class="current-network__item" aria-label="Facebook">
+                <a href="" class="current-network__link">Facebook</a>
+              </li>
+              <li class="current-network__item" aria-label="LinkedIn">
+                <a href="" class="current-network__link">LinkedIn</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
       <section class="section">
         <div class="container">
           <h1 hidden>фильтр портфолио</h1>
-          <ul class="navigator">
-            <li class="navigator__list">
-              <button class="navigator__list_btn" type="button">Все</button>
-            </li>
+          <div class="navigator-div">
+            <ul class="navigator">
+              <li class="navigator__list">
+                <button class="navigator__list_btn" type="button">Усі</button>
+              </li>
 
-            <li class="navigator__list">
-              <button class="navigator__list_btn" type="button">
-                Веб-сайти
-              </button>
-            </li>
-            <li class="navigator__list">
-              <button class="navigator__list_btn" type="button">Додатки</button>
-            </li>
-            <li class="navigator__list">
-              <button class="navigator__list_btn" type="button">Дизайн</button>
-            </li>
-            <li class="navigator__list">
-              <button class="navigator__list_btn" type="button">
-                Маркетинг
-              </button>
-            </li>
-          </ul>
+              <li class="navigator__list">
+                <button class="navigator__list_btn" type="button">
+                  Веб-сайти
+                </button>
+              </li>
+              <li class="navigator__list">
+                <button
+                  class="navigator__list_btn navigator__list_btn--change"
+                  type="button"
+                >
+                  Додатки
+                </button>
+              </li>
+              <li class="navigator__list">
+                <button class="navigator__list_btn" type="button">
+                  Дизайн
+                </button>
+              </li>
+              <li class="navigator__list">
+                <button class="navigator__list_btn" type="button">
+                  Маркетинг
+                </button>
+              </li>
+            </ul>
+          </div>
 
           <ul class="grid">
             <li class="grid__item">
@@ -272,11 +347,12 @@
     </main>
     <footer class="footer">
       <div class="container container--footer">
-        <div>
+        <div class="footer-contact">
           <h2 hidden>контакты></h2>
           <a class="logo footer__logo" lang="en" href="./index.html"
             >Web<span class="logo__text logo-text--color">Studio</span></a
           >
+
           <address>
             <ul class="footer-list">
               <li class="footer-list__item">
@@ -303,6 +379,7 @@
             </ul>
           </address>
         </div>
+
         <div class="bottom-icon">
           <p class="bottom-icon__paragraph">Приєднуйтесь</p>
           <ul class="network">
@@ -358,5 +435,12 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

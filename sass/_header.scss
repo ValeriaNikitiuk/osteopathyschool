@@ -2,18 +2,22 @@
     border-bottom: 1px solid #ECECEC;
     background-color: var(--secondary-text-color);
     color: var(--accent-text-color);
+    @media screen and (min-width: 480px) {
+        height: 60px;
+        }
+    @media screen and (min-width: 768px) {
+            height: 80px;
+        }
 }
 
-.header-button{
-margin-left: auto;
-border:none;
-background-color: transparent;
-}
 
 /* MAIN DIV */
 
 .container--header {
   @extend %algin-list;
+@media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
 }
 
 
@@ -22,7 +26,13 @@ background-color: transparent;
     list-style: none;
     display: flex;
     margin-left: 93px;
-    display: none;
+   
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+    @media screen and (min-width: 768px) {
+            
+        }
 }
 
 
@@ -55,22 +65,42 @@ background-color: transparent;
         }
 }
 
-
+.header .current-nav__item--changes{
+    color: var(--accent-text-color);
+}
 
 
 .contacts__item {
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-duration: 250ms;
-
     color: rgba(117, 117, 117, 1);
-}
+    @media screen and (min-width: 768px) {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+    }      
 
 .contacts {
     list-style: none;
     display: flex;
     margin-left: auto;
     display: none;
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+    @media screen and (min-width: 768px) {
+            display: flex;
+                flex-wrap: wrap;
+                margin-left: 96px;
+                    margin-top: 6px;
+                }
+     @media screen and (min-width: 1200px) {
+        margin-left: auto;
+                 }
 }
 
 
@@ -87,18 +117,20 @@ background-color: transparent;
        &:focus {
             color: var(--accent-text-color);
         }
-}
+ 
+ }
+               
 
-.contacts .contacts__item+.contacts__item {
-    margin-left: 50px;
-}
+// .contacts .contacts__item+.contacts__item {
+//     margin-left: 50px;
+// }
 
 
 
 
 .contacts__link {
     @extend %algin-list;
-    @include font(500, 14px, 1.14, 0.02em);
+    @include font(500, 12px, 1.16, 0.02em);
     cursor: pointer;
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -109,7 +141,19 @@ background-color: transparent;
        &:focus {
             color: var(--accent-text-color);
         }
-}
+ @media screen and (min-width: 1200px) {
+    @include font(500, 14px, 1.14, 0.02em);
+ }
+
+ }
+.contacts .contacts__item+.contacts__item {
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+        }
+    }
+
+
+
 
 .current-nav-link {
     color: var(--accent-text-color);
@@ -119,12 +163,23 @@ background-color: transparent;
 /* ______________________СВГ___________ */
 
 .contacts__icons {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: currentColor
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    fill: currentColor;
+    @media screen and (min-width: 1200px) {
+            width: 16px;
+            height: 12px;
+            margin-right: 10px;
+        }
+
 }
 
 .contacts__icons--size {
-    height: 16px;
+    height: 14px;
+    width: 10px;
+@media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
 }

@@ -3,7 +3,7 @@
     gap: 10px;
     list-style-type: none;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 
@@ -23,7 +23,12 @@
 }
 
 .bottom-icon {
-    margin-left: 70px;
+    margin-top: 60px;
+    @media screen and (min-width: 768px) {
+            margin-top: 5px;
+            margin-left: 165px;
+            text-align: center;
+        }
 }
 
 .bottom-icon__paragraph {
@@ -46,7 +51,3 @@
 }
 
 
-.container--footer {
-    display: flex;
-    align-items: baseline;
-}
