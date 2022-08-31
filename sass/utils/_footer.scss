@@ -57,15 +57,32 @@
 @media screen and (max-width: 767px) {
         flex-direction: column;
             align-items: center;
-            text-align: center;
-}}
+            text-align: center;}
+            @media screen and (min-width: 1200px) {
+                    align-items: baseline;
+                }
+            }
+
 
 .footer-contact {
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 768px) {
            display: flex;
            flex-direction: column;
            margin-left: 61px;
             text-align: center;
                 white-space: nowrap;
         }
-}
+
+        //    @media screen and (max-width: 1199px) {
+        //        display: flex;
+        //        flex-direction: column;
+        //        margin-left: 61px;
+        //        text-align: center;
+        //        white-space: nowrap;
+        //    }
+                @media screen and (min-width: 1200px) {
+                margin-left: 0;
+               
+                }
+        
+        }

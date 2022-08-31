@@ -286,6 +286,12 @@ button {
   background-position: center;
   background-color: var(--aditional-background-color);
 }
+@media screen and (min-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
@@ -484,7 +490,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .footer-forms__label {
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 
@@ -561,6 +567,10 @@ button {
         -ms-flex-align: end;
             align-items: flex-end;
     margin-top: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -711,6 +721,11 @@ button {
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .bottom-icon {
+    margin-left: 70px;
+  }
+}
 
 .bottom-icon__paragraph {
   margin-bottom: 20px;
@@ -742,7 +757,7 @@ button {
 @media screen and (min-width: 1200px) {
   .main__section {
     display: contents;
-    padding-bottom: 88px;
+    padding-bottom: 94px;
   }
 }
 
@@ -770,6 +785,11 @@ button {
      -moz-column-gap: 30px;
           column-gap: 30px;
   list-style: none;
+}
+@media screen and (min-width: 1200px) {
+  .picture-item {
+    padding-bottom: 94px;
+  }
 }
 
 .picture-item__image {
@@ -985,8 +1005,15 @@ button {
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container--footer {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer-contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -998,6 +1025,11 @@ button {
     margin-left: 61px;
     text-align: center;
     white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact {
+    margin-left: 0;
   }
 }
 
@@ -1717,7 +1749,6 @@ img {
 }
 
 .contacts-menu {
-  margin-top: 302px;
   list-style: none;
 }
 

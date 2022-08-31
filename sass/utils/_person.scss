@@ -3,9 +3,9 @@
     display: none;
     @media screen and (min-width: 1200px) {
             display: contents;
-            padding-bottom: 88px;
+            padding-bottom: 94px;
         }
-}
+    }          
 
 .main__title {
     text-align: center;
@@ -22,6 +22,9 @@
     display: flex;
     column-gap: 30px;
     list-style: none;
+    @media screen and (min-width: 1200px) {
+            padding-bottom: 94px;
+        }
     
 }
 

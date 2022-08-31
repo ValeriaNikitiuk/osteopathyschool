@@ -29,7 +29,7 @@
             text-align: center;
         }
                  @media screen and (min-width: 1200px) {
-                    margin-left: 93px;
+                    margin-left: auto;
                  }
                  
 }
@@ -37,8 +37,7 @@
 
 
 .footer-forms {
-    @extend %algin-list;
-    
+    @extend %algin-list; 
     justify-content: center;
 @media screen and (min-width: 1200px) {
     margin-left: auto;
@@ -89,6 +88,7 @@
  @media screen and (min-width: 1200px) {
         align-items: flex-end;
         margin-top: 0;
+        flex-direction: row;
  }
 }
 
