@@ -15,8 +15,8 @@
         }
  @media screen and (min-width: 480px) {
      width: 450px;
-   
  }
+
 }
 
 .footer-forms__label {
@@ -81,10 +81,7 @@
     align-items: center;
     flex-direction: column;
     margin-top: 60px;
-    @media screen and (min-width: 768px) {
-        margin-top: 232px;
-        margin-left:-540px;
-        }
+       
  @media screen and (min-width: 1200px) {
         align-items: flex-end;
         margin-top: 0;

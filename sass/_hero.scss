@@ -5,49 +5,64 @@
     padding-bottom: 200px;
     text-align: center;
     max-width: 1600px;
-    min-height: 600px;
+    min-height: 400px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-     url(../img/Header1\ img.jpg);
+    // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    //  url(../img/Header1\ img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     background-color: var(--aditional-background-color);
     @media screen and (min-width: 480px) {
             padding-top: 118px;
                 padding-bottom: 118px;
         }
+                @media screen and (min-width: 1200px) {
+                  
+                    height: 600px;
+                }
+
+                                
+                                
+                   
 }
+
+
+ @media (min-width: 1200px) {
+     .hero {
+         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+             url(../img/hero-desk.jpg);
+     }
 
 @media (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-         url(../img/Header1\ img@2x.jpg);
+         url(../img/hero-desk2x.jpg);
     }
-}
+        
+} }
 
-    @media (min-width: 489px){
+    @media (max-width:767px){
         .hero {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../img/Header2\ img.jpg);
+            url(../img/hero-mob.jpg);
         }
         @media (min-resolution: 2dppx) {
          .hero {
          background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-         url(../img/Header\ img@2x2.jpg);
+         url(../img/hero-mob2x.jpg);
                     }}
     }
 
      @media (min-width: 768px) {
       .hero {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../img/head-Img3.jpg);
+      url(../img/hero-tab.jpg);
              }
 
          @media (min-resolution: 2dppx) {
          .hero {
        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-       url(../img/head-Img3@2x.jpg);
+       url(../img/hero-tab2x.jpg);
                  }}
              }
     

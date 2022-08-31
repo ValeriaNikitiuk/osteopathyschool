@@ -72,13 +72,11 @@
         </button>
       </div>
       <div class="header-menu js-menu-container" id="mobile-menu">
-        <div class="container-menu">
-          <button class="header-button__close js-close-menu" type="button">
-            <svg width="40px" height="40px">
-              <use href="./img/symbol-defs.svg#icon-close_40px"></use>
-            </svg>
-          </button>
-          <nav class="menu__items">
+            <button class="header-button__close js-close-menu" type="button">
+              <svg width="40px" height="40px">
+                <use href="./img/symbol-defs.svg#icon-close_40px"></use>
+              </svg>
+            </button>
             <div class="current-menu__div">
               <ul class="current-menu">
                 <li class="current-menu__list">
@@ -100,6 +98,11 @@
             </div>
             <div clas="contacts-menu__div">
               <ul class="contacts-menu">
+                 <li class="list-menu" aria-label="Позвонити">
+                  <a href="tel:+380961111111" class="list-menu__link">
+                    +38 096 111 11 11</a
+                  >
+                </li>
                 <li class="list-menu">
                   <a
                     href="mailto:info@devstudio.com"
@@ -108,28 +111,25 @@
                     info@devstudio.com
                   </a>
                 </li>
-                <li class="list-menu" aria-label="Позвонити">
-                  <a href="tel:+380961111111" class="list-menu__link">
-                    +38 096 111 11 11</a
-                  >
+               
+              </ul>
+
+              <ul class="current-network">
+                <li class="current-network__item" aria-label="Instagram">
+                  <a href="" class="current-network__link">Instagram</a>
+                </li>
+                <li class="current-network__item" aria-label="Twitter">
+                  <a href="" class="current-network__link">Twitter</a>
+                </li>
+                <li class="current-network__item" aria-label="Facebook">
+                  <a href="" class="current-network__link">Facebook</a>
+                </li>
+                <li class="current-network__item" aria-label="LinkedIn">
+                  <a href="" class="current-network__link">LinkedIn</a>
                 </li>
               </ul>
             </div>
-            <ul class="current-network">
-              <li class="current-network__item" aria-label="Instagram">
-                <a href="" class="current-network__link">Instagram</a>
-              </li>
-              <li class="current-network__item" aria-label="Twitter">
-                <a href="" class="current-network__link">Twitter</a>
-              </li>
-              <li class="current-network__item" aria-label="Facebook">
-                <a href="" class="current-network__link">Facebook</a>
-              </li>
-              <li class="current-network__item" aria-label="LinkedIn">
-                <a href="" class="current-network__link">LinkedIn</a>
-              </li>
-            </ul>
-          </nav>
+          </div>
         </div>
       </div>
     </header>
