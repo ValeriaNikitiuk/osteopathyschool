@@ -283,7 +283,7 @@ button {
   background-repeat: no-repeat;
   background-color: var(--aditional-background-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -291,6 +291,8 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     height: 600px;
   }
 }
@@ -481,6 +483,11 @@ button {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-forms__box__input {
+    width: 358px;
+  }
+}
 
 .footer-forms__label {
   display: block;
@@ -499,6 +506,7 @@ button {
 @media screen and (min-width: 1200px) {
   .footer-forms__label {
     margin-left: auto;
+    text-align: left;
   }
 }
 
@@ -1035,10 +1043,16 @@ button {
             align-items: baseline;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container--footer {
+    text-align: left;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .footer-contact {
     margin-left: 0;
+    text-align: left;
   }
 }
 
