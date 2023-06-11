@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.scss" />
   </head>
   <body>
     <header class="header">
@@ -31,35 +31,43 @@
             <a
               href="./index.html"
               class="current-nav__item current-nav__item--changes"
-              >Студія</a
+              >Главная</a
             >
           </li>
           <li class="current-nav__top">
-            <a href="./portfolio.html" class="current-nav__item">Портфоліо</a>
+            <a href="./portfolio.html" class="current-nav__item">Контакты</a>
           </li>
           <li class="current-nav__top">
-            <a href="" class="current-nav__item">Контакти</a>
+            <a href="" class="current-nav__item">О нас</a>
+          </li>
+          <li class="current-nav__top">
+            <a href="" class="current-nav__item">Школа остеопатии</a>
           </li>
         </ul>
 
         <ul class="contacts">
           <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg class="contacts__icons">
-                <use href="./img/symbol-defs.svg#icon-envelope"></use>
+            <a
+                  href="https://www.google.com/maps/place/%D0%9A%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D1%8F/@35.3289659,33.238997,13z/data=!3m1!4b1!4m15!1m8!3m7!1s0x14de0dbe1f962d29:0xd3d22dab0be5118f!2z0JrQuNGA0LjQvdC40Y8!3b1!8m2!3d35.299194!4d33.2363246!16zL20vMDV3bHdu!3m5!1s0x14de134c8dbd838b:0xea57cce4a86ef5eb!8m2!3d35.3322825!4d33.3195479!16s%2Fg%2F11gm8l5v33?entry=ttu"
+                  class="contacts__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >
+                  <svg class="contacts__icons">
+                <use href="./img/symbol-defs.svg#icon-location2"></use>
               </svg>
-              info@devstudio.com
-            </a>
+              Girne,Cyprus</a>
           </li>
-          <li class="contacts__item" aria-label="Позвонити">
-            <a href="tel:+380961111111" class="contacts__link">
+          <li class="contacts__item" aria-label="call">
+            <a href="tel:+905338811713" class="contacts__link">
               <svg class="contacts__icons contacts__icons--size">
                 <use href="./img/symbol-defs.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11</a
+              +9 0533 8811 713</a
             >
           </li>
         </ul>
+       
         <button
           class="header-button js-open-menu"
           aria-expanded="false"
@@ -100,7 +108,7 @@
               <ul class="contacts-menu">
                  <li class="list-menu" aria-label="Позвонити">
                   <a href="tel:+380961111111" class="list-menu__link">
-                    +38 096 111 11 11</a
+                    +9 0533 8811 713</a
                   >
                 </li>
                 <li class="list-menu">
@@ -134,11 +142,28 @@
       </div>
     </header>
     <main class="main">
+       <div class="lang">
+    <div>
+  <button class="header-btn">RU</button>
+</div>
+
+<div>
+   <button class="header-btn">EN</button>
+</div>
+
+<div>
+    <button class="header-btn">ES</button>
+</div>
+<div>
+    <button class="header-btn">TUR</TR></button>
+</div>
+  </div>
       <section class="hero">
+        
         <div class="container">
-          <h1 class="container__title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="container__title">Устал от боли - почувствуй легкость</h1>
           <button type="button" class="container__btn" data-modal-open>
-            Замовити послугу
+            Заказать звонок
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="backdrop__modal">

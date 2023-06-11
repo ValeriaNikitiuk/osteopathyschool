@@ -1,0 +1,31 @@
+.lang {
+    margin-left: 600px;
+    display: flex;
+}
+
+.header-btn {
+    margin-right: 37px;
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+    font-weight: 400;
+    font-style: 'Montserrat';
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: var(--top--color);
+    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+    border-color: rgba(78, 78, 73, 0.185);
+
+}
+
+.lang-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--top--color);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+    border-color: rgba(78, 78, 73, 0.185);
+}
